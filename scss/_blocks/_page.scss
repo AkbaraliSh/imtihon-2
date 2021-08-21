@@ -1,10 +1,10 @@
 .page{
     padding: 102px 165px;
-    background-image: url(../img/page-img.png);
-    background-repeat: no-repeat;
+    background-image: url(../img/page-img.png),url(../img/Mask2.png);
+    background-position: center,bottom right;
+    background-repeat: no-repeat no-repeat;
     margin-top: 329px;
     &__intro{
-        // width: 1106px;
         display: flex;
         align-items: center;
     }
@@ -19,5 +19,57 @@
     }
     &__apple{
         margin-right: 18px;
+    }
+}
+@media screen and (max-width:768px) {
+    .page{
+        padding: 53px 156px ;
+        background-image: url(../img/Mask-tablet.png),url(../img/Mask2-tablet.png);
+        background-position: center,bottom right;
+        background-repeat: no-repeat no-repeat;
+        margin-top: 104px;
+        &__intro{
+            width: 457px;
+            display: block;
+            text-align: center;
+        }
+        &__title{
+            width: 457px;
+            margin-bottom: 40px;
+            margin-right: 0;
+        }
+        &__apple{
+            margin-right: 12.86px;
+        }
+    }
+}
+@media screen and (max-width:375px) {
+    .page{
+        padding: 76px 32px;
+        background-image: url(../../img/Group22.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-top: 120px;
+        &__intro{
+            width: 311px;
+            text-align: center;
+        }
+        &__title{
+            width: 311px;
+            font-size: 32px;
+            line-height: 32px;
+            letter-spacing: -1.42857px;
+            margin-right: 0;
+            margin-bottom: 40px;
+        }
+        &__apple{
+            width: 113.57px;
+            height: 40px;
+            margin-right: 12.86px;
+        }
+        &__google{
+            width: 130px;
+            height: 40px;
+        }
     }
 }
