@@ -74,7 +74,7 @@
 }
 @media screen and (max-width:375px) {
     .header{
-        padding: 24px 149.5px 22px 32px;
+        padding: 24px 149.5px 22px 32px;position: fixed;
         &__list{
             width: 120px;
             text-align: center;

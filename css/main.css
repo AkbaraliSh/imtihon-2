@@ -135,6 +135,7 @@ a {
 @media screen and (max-width: 375px) {
   .header {
     padding: 24px 149.5px 22px 32px;
+    position: fixed;
   }
   .header__list {
     width: 120px;
