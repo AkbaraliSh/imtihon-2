@@ -2,7 +2,7 @@
     
     background-color:#fff;
     padding: 22px 165px 21px 169px ;
-    // position: fixed;
+    position: fixed;
     top: 0;
     margin-bottom: 0;
     &__nav{
@@ -66,27 +66,40 @@
 }
 @media screen and (max-width:768px) {
     .header{
+        position: fixed;
+        top: 0;
         padding: 22px 40px 21px 39px;
         &__list{
             margin-right: 94px;
+        }
+        &__button{
+            &:hover{
+                cursor: pointer;
+                box-sizing:border-box;
+                border: 1px solid #FCB72B;
+                background-color:#fff;
+                color: #FCB72B;
+                padding: 13px 38px;
+            }
         }
     }
 }
 @media screen and (max-width:375px) {
     .header{
-        padding: 24px 149.5px 22px 32px;
-        // position: fixed;
+        padding: 22px 149.5px 22px 32px;
+        position: fixed;
+        top: 0;
         &__list{
             width: 120px;
             text-align: center;
             margin: 0;
             height: 100vh;
-            padding-top: 95px;
+            margin-top: 0px;
             background-color: rgba(0, 0, 0,0.3);
             display: none;
             position: absolute;
             left: 0px;
-            top: 0px;
+            top: 20px;
             animation-name: bar;
             animation-duration:1s;
             animation-timing-function:ease-in-out;

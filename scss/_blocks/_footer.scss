@@ -64,11 +64,12 @@
 }
 @media screen and (max-width:375px) {
     .footer{
-        // width: 375px;
-        padding: 64px 72px 88px 72px ;
+        padding: 64px 0 88px 0;
+        text-align: center;
         &__nav{
             display: flex;
             flex-direction: column;
+         
         }
         &__list{
             display: flex;
