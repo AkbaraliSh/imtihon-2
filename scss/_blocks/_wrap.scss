@@ -1,0 +1,192 @@
+.wrap{
+    margin-bottom: 200px;
+    position: relative;
+    &__hr{
+        width: 974px;
+        height: 15px;
+        background-color:#E5ECF4;
+        border:none;
+        position: relative;
+        transform: translateX(-120px);
+        left:0;
+    }
+    &__image--one{
+        color:#000;
+        padding: 24px 28.61px 24px 29px;
+        background-color: #FCB72B;
+        border-radius: 50%;
+        position: absolute;
+        transform: translateY(-145px);
+    }
+    &__image--two{
+        color:#000;
+        padding: 32px 26px 32px 27px;
+        background-color: #FCB72B;
+        border-radius: 50%;
+        position: absolute;
+        transform: translateY(-145px);
+    }
+    &__image--three{
+        color:#000;
+        padding: 28px;
+        background-color: #FCB72B;
+        margin-right: 0;
+        border-radius: 50%;
+        transform: translateX(43px);
+        position: absolute;
+        transform: translateY(-145px);
+    }
+    
+    &__list{
+        display: flex;
+        align-items: center;
+        margin-top: 87px;
+        margin-left: 50px;
+        transform: translateX(40px);
+        
+    }
+    &__item{
+        margin-right: 30px;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+    &__text{
+        width: 350px;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: -1.07143px;
+        margin-bottom: 27px;
+        color: #495567;
+    }
+    &__discription{
+        width: 350px;
+        font-family: "Lexend Deca";
+        font-size: 15px;
+        line-height: 25px;
+        color: #939CAA;
+        
+    }
+}
+@media screen and (max-width:768px) {
+    .wrap{
+        position: relative;
+        margin-bottom: 145px;
+        &__page{
+            display: flex;
+            align-items: center;
+        }
+        &__hr{
+            width: 15px;
+            height: 512px;
+            background-color:#E5ECF4;
+            margin-right: 150px;
+            border:none;
+            position: relative;
+            transform: translate(85px,-62px);
+        }
+        &__image--one{
+            color:#000;
+            padding: 24px 28.61px 24px 29px;
+            background-color: #FCB72B;
+            border-radius: 50%;
+            position: absolute;
+            transform: translate(-210px,0px);
+        }
+        &__image--two{
+            color:#000;
+            padding: 32px 26px 32px 27px;
+            background-color: #FCB72B;
+            border-radius: 50%;
+            position: absolute;
+            transform: translate(-210px,0px);
+        }
+        &__image--three{
+            color:#000;
+            padding: 28px;
+            background-color: #FCB72B;
+            margin-right: 0;
+            border-radius: 50%;
+            position: absolute;
+            left: 0;
+            transform: translate(-210px,0px);
+        }
+        &__list{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 165px;              
+        }
+        &__item{
+            margin-right: 0px;
+            margin-bottom: 40px;
+            &:last-child{
+                margin-right: 0;
+                margin-bottom: 0;
+            }
+        }
+        &__text{
+            width: 398px;
+        }
+        &__discription{
+            width: 398px;
+            
+        }
+    }
+}
+@media screen and (max-width:375px) {
+    .wrap{
+        margin-bottom: 120px;
+        position: relative;
+        &__page{
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+        &__hr{
+            display: none;
+        }
+        &__list{
+            width: 311px;
+            transform: translateX(0px);
+            text-align: center;
+            margin:0;              
+        }
+        &__image--one{
+            position: static;
+            transform: translate(0px,0px);
+            margin-bottom: 24px;
+        }
+        &__image--two{
+            position:static;
+            transform: translate(0px,0px);
+            margin-bottom: 24px;
+        }
+        &__image--three{
+            position:static;
+            transform: translate(0px,0px);
+            margin-bottom: 24px;
+        }
+        
+        &__item{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin-right: 0px;
+            margin-bottom: 40px;
+            text-align: center;
+            &:last-child{
+                margin-right: 0;
+                margin-bottom: 0;
+            }
+        }
+        &__text{
+            width:311px;
+        }
+        &__discription{
+            width: 311px;
+            
+        }
+    }
+}

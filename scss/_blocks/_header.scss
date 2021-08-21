@@ -1,0 +1,138 @@
+.header{
+    
+    background-color:#fff;
+    padding: 22px 165px 21px 169px ;
+    position: fixed;
+    top: 0;
+    margin-bottom: 0;
+    &__nav{
+        height: 53px;
+        display: flex;
+        align-items: center;
+    }
+    &__bar{
+        display: none;
+    }
+    &__checkbox{
+        clip: rect(0 0 0 0);
+        clip-path: inset(50%);
+        height: 1px;
+        overflow: hidden;
+        position: absolute;
+        white-space: nowrap;
+        width: 1px;
+    }
+    &__list{
+        display: flex;
+        align-items: center;
+        margin-right: 511px;
+        margin-left: 58.18px;
+    }
+    &__item{
+        margin-right: 32px;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+    &__link{
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 25px;
+        color: #939CAA;
+        &:hover{
+            cursor: pointer;
+            color: #FCB72B;
+        }
+    }
+    &__button{
+        border:none;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;
+        padding: 14px 39px;
+        color: #FFFFFF;
+        background-color: #FCB72B;
+        &:hover{
+            cursor: pointer;
+            box-sizing:border-box;
+            border: 1px solid #FCB72B;
+            background-color:#fff;
+            color: #FCB72B;
+            padding: 13px 38px;
+        }
+        
+    }
+}
+@media screen and (max-width:768px) {
+    .header{
+        padding: 22px 40px 21px 39px;
+        &__list{
+            margin-right: 94px;
+        }
+    }
+}
+@media screen and (max-width:375px) {
+    .header{
+        padding: 24px 149.5px 22px 32px;
+        &__list{
+            width: 120px;
+            text-align: center;
+            margin: 0;
+            height: 100vh;
+            padding-top: 95px;
+            background-color: rgba(0, 0, 0,0.3);
+            display: none;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            animation-name: bar;
+            animation-duration:1s;
+            animation-timing-function:ease-in-out;
+            animation-delay:0s;
+            animation-iteration-count:1;
+            animation-direction:normal;
+            animation-play-state: running;
+            animation-fill-mode: forwards;
+        }
+        &__button{
+            display: none;
+        }
+        &__link{
+            color: #fff;
+        }
+        &__item{
+            margin-bottom: 5px;
+            margin-right: 0;
+            :last-child{
+                margin-bottom: 0px;
+            }
+        }
+        &__bar{
+            width: 19.69px;
+            height: 16px;
+            color: #FCB72B;
+            display: block;
+            margin-right: 98.3px;
+        }
+        &__img{
+            width: 75.5px;
+            height: 20px;
+        }
+        &__checkbox:checked ~ &__list{
+            display: block;
+            opacity: 0;
+        }
+    }
+    @keyframes bar {
+        0%{
+            opacity: 0;
+            transform: translateX(-50px);
+        }
+        100%{
+            opacity: 1;
+            transform: translateX(0px);
+        }
+        
+    }
+}

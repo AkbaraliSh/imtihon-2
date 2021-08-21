@@ -1,0 +1,45 @@
+.intro{
+    &__list{
+        display: flex;
+        flex-direction: column;
+    }
+    &__item{
+        margin-bottom: 160px;
+        &:nth-child(1)::after{
+            background-image:url(../img/girl.jpg);
+        }
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+    &__text{
+        width: 445px;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 48px;
+        letter-spacing: -2.14286px;
+        
+        color: #495567;
+    }
+    &__discription{
+        width: 445px;
+        font-family: "Lexend Deca";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 25px;
+        color: #939CAA;
+        margin-top: 24px;
+        margin-bottom: 40px;
+    }
+    &__button{
+        border:none;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;
+        padding: 14px 43.5px 14px 44.5px;
+        color: #FFFFFF;
+        background: #FCB72B;
+    }
+}

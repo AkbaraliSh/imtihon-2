@@ -1,0 +1,23 @@
+.page{
+    padding: 102px 165px;
+    background-image: url(../img/page-img.png);
+    background-repeat: no-repeat;
+    margin-top: 329px;
+    &__intro{
+        // width: 1106px;
+        display: flex;
+        align-items: center;
+    }
+    &__title{
+        width: 415px;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 48px;
+        letter-spacing: -2.14286px;
+        margin-right: 336px;
+        color: #FFFFFF;
+    }
+    &__apple{
+        margin-right: 18px;
+    }
+}

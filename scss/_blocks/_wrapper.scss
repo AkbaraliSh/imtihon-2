@@ -1,0 +1,128 @@
+.wrapper{
+    margin-bottom: 160px;
+    padding-top: 153px;
+    padding-left: 85px;
+    padding-bottom: 152px;
+    background-image: url(../img/Bitmap.png );
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    &__title{
+        width: 500px;
+        font-weight: bold;
+        font-size: 56px;
+        line-height: 56px;
+        letter-spacing: -2.5px;
+        margin: 0;
+        color: #FFFFFF;
+        margin-bottom: 40px;
+        padding-top: 300px;
+        
+    }
+    &__discription{
+        width: 405px;
+        font-family: "Lexend Deca";
+        font-size: 15px;
+        line-height: 25px;
+        color: #FFFFFF;
+        margin-bottom: 40px;
+        
+    }
+    &__button{
+        border:none;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;
+        padding: 14px 39px;
+        color: #FFFFFF;
+        background-color: #FCB72B;
+        &:hover{
+            cursor: pointer;
+            box-sizing:border-box;
+            border: 3px solid #FCB72B;
+            background-color:#fff;
+            color: #FCB72B;
+            padding: 11px 36px;
+        }
+    }
+    &__text{
+        &:after{
+            content: "";
+            width: 202px;
+            height: 15px;
+            background-color: #FCB72B;
+            
+            // position: relative;
+            // z-index: 1;
+            // background-image:url(../img/line-arrow.svg);
+            // background-clip: content-box;
+        }
+    }
+}
+@media screen and (max-width:768px) {
+    .wrapper{
+        margin-bottom: 0px;
+        padding-top: 137px;
+        padding-right: 98px;
+        padding-left: 97px;
+        padding-bottom: 217px;
+        background-image: url(../img/Bitmap2.png );
+        background-repeat: no-repeat;
+        background-position:center;
+        background-size: cover;
+        text-align: center;
+        &__title{
+            width: 573px;
+            margin-bottom: 24px;
+            
+        }
+        &__discription{
+            width: 573px;
+            margin-bottom: 32px;
+        }
+        &__button{
+            display: inline-block;
+            text-align: center;
+        }
+        &__text{
+            width: 573px;
+            text-align: center;
+        }
+    }
+}
+@media screen and (max-width:375px) {
+    .wrapper{
+        margin-bottom: 120px;
+        padding-top: 115px;
+        padding-right: 32px;
+        padding-left: 32px;
+        padding-bottom: 179px;
+        background-image: url(../img/Bitmap-mobile.png );
+        background-repeat: no-repeat;
+        background-position:center;
+        background-size: cover;
+        text-align: center;
+        &__title{
+            width: 311px;
+            font-size: 40px;
+            line-height: 40px;
+            text-align: center;
+            letter-spacing: -1.78571px;
+            margin-bottom: 24px;
+            
+        }
+        &__discription{
+            width: 311px;
+            margin-bottom: 34px;
+        }
+        &__button{
+            display: inline-block;
+            text-align: center;
+        }
+        &__text{
+            width: 311px;
+            text-align: center;
+        }
+    }
+}
