@@ -8,6 +8,7 @@
     background-repeat: no-repeat;
     background-position:center;
     background-size: cover;
+    position: relative;
     &__title{
         width: 500px;
         font-weight: bold;
@@ -47,17 +48,17 @@
         }
     }
     &__text{
-        &:after{
-            content: "";
-            width: 202px;
-            height: 15px;
-            background-color: #FCB72B;
-            
-            // position: relative;
-            // z-index: 1;
-            // background-image:url(../img/line-arrow.svg);
-            // background-clip: content-box;
-        }
+        margin-left: 95px;
+    }
+    &__line{
+        position: absolute;
+        left: 0;
+        transform: translateY(-95px);
+        
+    }
+    &__line-arrow{
+        position: absolute;
+        transform: translateX(240px) translateY(-95px);
     }
 }
 @media screen and (max-width:768px) {
@@ -88,6 +89,15 @@
         &__text{
             width: 573px;
             text-align: center;
+            margin-left: 0px;
+        }
+        &__line{
+            display: none;
+            
+        }
+        &__line-arrow{
+            position: absolute;
+            transform: translateX(-600px) translateY(50px);
         }
     }
 }
@@ -123,6 +133,15 @@
         &__text{
             width: 311px;
             text-align: center;
+            margin-left: 0px;
+        }
+        &__line{
+            display: none;
+            
+        }
+        &__line-arrow{
+            position: absolute;
+            transform: translateX(-600px) translateY(50px);
         }
     }
 }

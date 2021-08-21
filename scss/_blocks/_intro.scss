@@ -27,6 +27,11 @@
             margin-left: 64px;
         }
     }
+    &__arrow--left{
+        position: absolute;
+        z-index: 1;
+        transform: translateX(540px) translateY(150px);
+    }
     &__img--two{
         margin-right: 220px;
         display: flex;
@@ -42,6 +47,11 @@
             transform: translateX(-500px);
         }
     }
+    &__arrow--right{
+        position: absolute;
+        z-index: 1;
+        transform: translateX(-550px) translateY(-150px);
+    }
     &__img--three{
         margin-left: 220px;
         display: flex;
@@ -54,6 +64,11 @@
             border-radius: 50%;
             margin-left: 64px;
         }
+    }
+    &__arrow--left1{
+        position: absolute;
+        z-index: 1;
+        transform: translateX(915px) translateY(-70px);
     }
     &__boy{
         border-radius:50%;
@@ -167,6 +182,11 @@
                 transform: translateX(436px);
             }
         }
+        &__arrow--left{
+            position: absolute;
+            z-index: 1;
+            transform: translateX(20px) translateY(300px);
+        }
         &__img--two{
             margin-right: 0px;
             display: flex;
@@ -185,6 +205,11 @@
                 transform: translateX(-500px);
             }
         }
+        &__arrow--right{
+            position: absolute;
+            z-index: 1;
+            transform: translateX(-410px) translateY(10px);
+        }
         &__img--three{
             margin-left:0px;
             display: flex;
@@ -202,6 +227,11 @@
                 position: absolute;
                 transform: translateX(436px);
             }
+        }
+        &__arrow--left1{
+            position: absolute;
+            z-index: 1;
+            transform: translateX(400px) translateY(80px);
         }
     }
 }
@@ -257,6 +287,11 @@
                 transform: translateX(436px);
             }
         }
+        &__arrow--left{
+            position: absolute;
+            z-index: 1;
+            transform: translateX(220px) translateY(162px);
+        }
         &__img--two{
             width: 311px;
             height: 311px;
@@ -276,6 +311,11 @@
                 transform: translateX(-500px);
             }
         }
+        &__arrow--right{
+            position: absolute;
+            z-index: 1;
+            transform: translateX(-310px) translateY(50px);
+        }
         &__img--three{
             width: 311px;
             height: 311px;
@@ -294,6 +334,11 @@
                 position: absolute;
                 transform: translateX(436px);
             }
+        }
+        &__arrow--left1{
+            position: absolute;
+            z-index: 1;
+            transform: translateX(320px) translateY(10px);
         }
     }
 }

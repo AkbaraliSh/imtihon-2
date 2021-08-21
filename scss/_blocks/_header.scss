@@ -2,8 +2,6 @@
     
     background-color:#fff;
     padding: 22px 165px 21px 169px ;
-    position: fixed;
-    top: 0;
     margin-bottom: 0;
     &__nav{
         height: 53px;
@@ -66,8 +64,6 @@
 }
 @media screen and (max-width:768px) {
     .header{
-        position: fixed;
-        top: 0;
         padding: 22px 40px 21px 39px;
         &__list{
             margin-right: 94px;
@@ -87,8 +83,6 @@
 @media screen and (max-width:375px) {
     .header{
         padding: 22px 149.5px 22px 32px;
-        position: fixed;
-        top: 0;
         &__list{
             width: 120px;
             text-align: center;
