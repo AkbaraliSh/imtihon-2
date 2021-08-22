@@ -90,6 +90,7 @@
         padding: 22px 149.5px 22px 32px;
         position: fixed;
         z-index:1;
+        overflow-x:hidden;
         &__list{
             width: 120px;
             text-align: center;
