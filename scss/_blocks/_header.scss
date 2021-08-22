@@ -1,6 +1,6 @@
 .header{
-  
-
+    
+    
     background-color:#fff;
     padding: 22px 165px 21px 169px ;
     margin-bottom: 0;
@@ -68,6 +68,8 @@
 @media screen and (max-width:768px) {
     .header{
         padding: 22px 40px 21px 39px;
+        position: fixed;
+        z-index: 1;
         &__list{
             margin-right: 94px;
         }
@@ -86,6 +88,8 @@
 @media screen and (max-width:375px) {
     .header{
         padding: 22px 149.5px 22px 32px;
+        position: fixed;
+        z-index:1;
         &__list{
             width: 120px;
             text-align: center;
