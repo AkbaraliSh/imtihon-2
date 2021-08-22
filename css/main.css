@@ -1183,6 +1183,7 @@ a {
 
 .footer__icon {
   margin-right: 24px;
+  fill: #FCB72B;
 }
 
 .footer__icon:nth-child(1) {
