@@ -1,8 +1,11 @@
 .header{
-    
+  
+
     background-color:#fff;
     padding: 22px 165px 21px 169px ;
     margin-bottom: 0;
+    position: fixed;
+    z-index: 1;
     &__nav{
         height: 53px;
         display: flex;

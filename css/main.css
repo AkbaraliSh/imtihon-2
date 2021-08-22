@@ -43,6 +43,8 @@ a {
   background-color: #fff;
   padding: 22px 165px 21px 169px;
   margin-bottom: 0;
+  position: fixed;
+  z-index: 1;
 }
 
 .header__nav {
@@ -232,6 +234,7 @@ a {
   padding-left: 165px;
   padding-bottom: 152px;
   padding-right: 775px;
+  margin-top: 100px;
   background-image: url(../img/Bitmap.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -275,7 +278,7 @@ a {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: 3px solid #FCB72B;
-  background-color: #fff;
+  background-color: #495567;
   color: #FCB72B;
   padding: 11px 36px;
 }
